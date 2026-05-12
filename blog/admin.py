@@ -8,4 +8,5 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
 
-
+# Register your models here.
+from .models import Post
